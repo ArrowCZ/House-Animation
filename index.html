@@ -1,0 +1,858 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8"/>
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styly.css" type="text/css"/>
+<link rel="icon" href="images/favicon.png" />
+<link rel="icon" sizes="64x64" href="images/favicon.png">
+ <!-- JQUERY -->
+<script src="https://code.nath.co/src/jQuery.min.js"></script>
+  <!-- FONTY -->
+  <link rel="stylesheet" type="text/css" href="fonty/MyFontsWebfontsKit.css">
+<title>Lorem Ipsum</title>
+</head>
+<body>	
+	<div id="nadpis"><h1>Jak funguje Vaše elektrárna</h1></div>
+	<div id="ikony-mobil">
+		<div id="ikona1">
+			<img src="images/ic-1.png" alt="ikona1"><br><br>
+			<div id="ikona-text1"><p>8x Panel Winacio</p></div>
+		</div>
+		<div id="ikona2">
+			<img src="images/ic-1.png" alt="ikona2"><br><br>
+			<div id="ikona-text2"><p>4x Panel Winacio</p></div>
+		</div>
+		<div id="ikona3">
+			<img src="images/ic-2.png" alt="ikona3"><br><br>
+			<div id="ikona-text3"><p>Storedge</p></div>
+		</div>
+		<div id="ikona4">
+			<img src="images/battery.png" alt="ikona4"><br><br>
+			<div id="ikona-text4"><p>Provoz z baterie</p></div>
+		</div>
+		<div id="ikona5">
+			<img src="images/car_mobile.png" alt="ikona5"><br><br>
+			<div id="ikona-text5"><p>Nabíjení auta</p></div>
+		</div>
+	</div>
+	<div id="main">  <!-- Hlavni sekce s obrazkem -->
+	
+		<div id="house-img">
+			<div id="house_dark"> 
+				<img src="images/house-dark.png" >
+			</div>
+			<div id="sun"><img src="images/sun.png" draggable="false" alt="panel1"> </div>
+			<div id="panel1"><img src="images/PANEL-BIG.png" draggable="false" alt="panel1"> </div>
+			<div id="stridac"><img src="images/stridac-full.png" draggable="false" alt="stridac"> </div>
+			<div id="energie_1"> 
+				<img src="images/big.svg">
+			</div>
+			<div id="energie_2"> 
+				<img src="images/do_domu_1.svg" id="change">
+			</div>
+			<div id="panel2"><img src="images/SOLAR_2.png" draggable="false" alt="panel2"> </div>
+			<div id="panel3"><img src="images/SOLAR_3.png" draggable="false" alt="panel3"> </div>
+			<div id="energie_3"> 
+				<img src="images/big2.svg">
+			</div>
+			<div id="energie_4"> 
+				<img src="images/big3.svg">
+			</div>
+			<div id="stridac2"><img src="images/stridac_step2.png" draggable="false" alt="stridac2"> </div>
+			<div id="energie_5"> 
+				<img src="images/do_domu_3.svg" >
+			</div>
+			<div id="energie_6"> 
+				<img src="images/do_domu_4.svg" >
+			</div>
+			<div id="shadow"> 
+				<img src="images/SHADOW.jpg" >
+			</div>
+			<div id="windows"> 
+				<img src="images/okna_full.png" >
+			</div>
+			<div id="windows_black"> 
+				<img src="images/okna_full_tma.png" >
+			</div>
+			<div id="car"> 
+				<img src="images/car_full.png" >
+			</div>
+			<div id="energie_auto"> 
+				<img src="images/energie_auto.svg" >
+			</div>
+			<div id="lights"> 
+				<img src="images/LIGHT.png" >
+			</div>
+			<div id="sun_pulse"><img src="images/sun_zare.png" draggable="false" alt="panel1"> </div>
+			<div id="sky"> 
+				<img src="images/SKY-LIGHT.png" >
+			</div>
+			<div id="car_day"> 
+				<img src="images/car_day.png" >
+			</div>
+			<img src="images/house_png.png" id="main_house_change" alt="barak-main" draggable="false"> <!-- Dum - hlavni sekce -->
+		</div>
+	
+	</div>
+	 <div id="buttons">
+		<div id="buttons-faze">
+			
+			<div id="faze1" onclick="posun1()"><p id="faze-text1">VE 8 panelů</p></div> 
+			<div id="faze2" onclick="posun2()"><p id="faze-text2">VE rozšíření <br> na 12 panelů</p></div>
+			<div id="faze3" onclick="posun3()"><p id="faze-text3">VE rozšíření <br> na 16 panelů</p></div>
+			<div id="faze4" onclick="posun4()"><p id="faze-text4">VE rozšíření <br>o baterii</p></div>
+			<div id="faze5" onclick="posun5()"><p id="faze-text5">VE provoz domů<br> z baterie</p></div>
+			<div id="faze6" onclick="posun6()"><p id="faze-text6">VE nabíjení elektromobilu</p></div>
+			
+			<!-- Buttony co hned prejdou na urcitou animaci. -->
+			
+		</div>
+	</div>
+	<div id="buttons-mobil">
+	
+		<div id="buttons-faze-mobil">
+			<div  id="faze-text_mobil1"><p>VE 8 panelů</p></div>
+			<div id="faze-text_mobil2"><p>VE rozšíření <br> na 12 panelů</p></div>
+			<div id="faze-text_mobil3"><p>VE rozšíření <br> na 16 panelů</p></div>
+			<div id="faze-text_mobil4"><p>VE rozšíření <br>o baterii</p></div>
+			<div  id="faze-text_mobil5"><p>VE provoz domů<br> z baterie</p></div>
+			<div  id="faze-text_mobil6"><p>VE nabíjení <br>elektromobilu</p></div>
+		</div>
+		
+		<!-- Na mobilu se meni pouze jeden text v zavislosti na fazi -->
+		
+		  <div id="play_button">
+			<div id="play" onclick="start_fun()">
+				<img src="images/play.png" alt="play">
+			</div>
+			<div id="stop" onclick="stop_fun()">
+				<img src="images/stop.png" alt="stop">
+			</div>
+		</div>
+	
+	</div>
+	<script>
+	
+	/* 
+
+		*VE - Vase Elektrarna house animation framework - pure JavaScript
+		*Code by Matej Brozek
+		*Version 1.0.0:
+		*	- Code cleaned
+		*	- Added requested changes
+		*	- Reworked animation system
+		
+		TODO:
+			- Consider using array in the repeating variables
+			- Make the responsive animations
+			- Responsivity optimalization
+			
+			- Phase buttons is a mess. A big one. 
+
+	*/ 
+	
+	
+		function _(id){ return document.getElementById(id); } 
+		var button = _("play_button");
+		var play = _("play");
+		var stop = _("stop");
+		
+		
+		function getImages(contentId) { //Funkce pro ziskani obrazku z divu. 
+			var content = document.getElementById(contentId);
+		// only one image, just return an item; or you can return an array
+			if (content) return document.getElementsByTagName('img');
+		}
+		
+		
+		
+	
+		var timeouts = []; //Vsechny timery v jednom poli.
+	
+		var krok_where = "none";  //String pro indikaci probihajiciho kroku. Potrebne pro zastaveni kroku, respektive stopnuti timeru.
+		var sun = _("sun");
+		var change = _("change");
+		var dum = getImages("house_dark")[5]; //Zde se zacina od peti, protoze je to ctvrty obrazek na strance. Bude zrejme nutno prepsat.
+		var sun = getImages("sun")[6];
+		var panel_img = getImages("panel1")[7];
+		var stridac = getImages("stridac")[8];
+		var energie1 = getImages("energie_1")[9];
+		var energie2 = getImages("energie_2")[10];
+		var panel2_img = getImages("panel2")[11];
+		var panel3_img = getImages("panel3")[12];
+		var energie3 = getImages("energie_3")[13];
+		var energie4 = getImages("energie_4")[14];
+		var stridac2 = getImages("stridac2")[15];
+		var energie5 = getImages("energie_5")[16];
+		var energie6 = getImages("energie_6")[17];
+		var shadow = getImages("shadow")[18];
+		var windows = getImages("windows")[19];
+		var windows_black = getImages("windows")[20]; //Ziskani obrazku 
+		var car = getImages("car")[21];
+		var energie_auto = getImages("energie_auto")[22];
+		var light = getImages("lights")[23];
+		var puls = getImages("sun_pulse")[24];
+		var sky = getImages("sky")[25];
+		var car_day = getImages("car_day")[26];
+		var main_house_change = _("main_house_change");
+		sun_pulse.classList.add("pulse");
+		
+		
+		/*
+		
+			Ruzne texty a faze pro buttony. Stale udelano mimo pole.
+		
+		*/
+		
+		var faze1 = _("faze1");
+		var faze2 = _("faze2");
+		var faze3 = _("faze3");
+		var faze4 = _("faze4");
+		var faze5 = _("faze5");
+		var faze6 = _("faze6");
+		
+		var faze_text1 = _("faze-text1");
+		var faze_text2 = _("faze-text2");
+		var faze_text3 = _("faze-text3");
+		var faze_text4 = _("faze-text4");
+		var faze_text5 = _("faze-text5");
+		var faze_text6 = _("faze-text6");
+		
+		var faze_text_mobil1 = _("faze-text_mobil1");
+		var faze_text_mobil2 = _("faze-text_mobil2");
+		var faze_text_mobil3 = _("faze-text_mobil3");
+		var faze_text_mobil4 = _("faze-text_mobil4");
+		var faze_text_mobil5 = _("faze-text_mobil5");
+		var faze_text_mobil6 = _("faze-text_mobil6");
+		
+		var ikona_text1 = _("ikona-text1");
+		var ikona_text2 = _("ikona-text2");
+		var ikona_text3 = _("ikona-text3");
+		var ikona_text4 = _("ikona-text4");
+		var ikona_text5 = _("ikona-text5");
+		
+		var ikona1 = _("ikona1");
+		var ikona2 = _("ikona2");
+		var ikona3 = _("ikona3");
+		var ikona4 = _("ikona4");
+		var ikona5 = _("ikona5");
+		
+		
+		function start_fun() //Funkce Start u pause/play tlacitka
+		{
+			if (krok_where == "none")
+			{
+				
+				active();
+				play.style.display = "none";
+				stop.style.display = "block";
+			}
+			else if(krok_where == "krok1")
+			{
+				timeouts[6] = setTimeout(krok2, 1000);
+				play.style.display = "none";
+				stop.style.display = "block";
+			}
+			else if(krok_where == "krok2")
+			{
+				timeouts[14] = setTimeout(krok3, 1000);
+				play.style.display = "none";
+				stop.style.display = "block";
+			}
+			else if(krok_where == "krok3")
+			{
+				timeouts[16] = setTimeout(krok4, 1000);
+				play.style.display = "none";
+				stop.style.display = "block";
+			}
+			else if(krok_where == "krok4")
+			{
+				timeouts[22] = setTimeout(krok5, 1000);
+				play.style.display = "none";
+				stop.style.display = "block";
+			}
+			else
+			{
+				return false;
+			}
+		}
+		
+
+		
+		function stop_fun() //Funkce Stop u pause/play tlacitka
+		{
+		
+			if (krok_where == "krok1")
+			{
+				 clearTimeout(timeouts[6]);
+				 play.style.display = "block";
+				stop.style.display = "none";
+			}
+			else if(krok_where == "krok2")
+			{
+				clearTimeout(timeouts[14]);
+				play.style.display = "block";
+				stop.style.display = "none";
+			}
+			else if(krok_where == "krok3")
+			{
+				clearTimeout(timeouts[16]);
+				play.style.display = "block";
+				stop.style.display = "none";
+			}
+			else if(krok_where == "krok4")
+			{
+				clearTimeout(timeouts[22]);
+				play.style.display = "block";
+				stop.style.display = "none";
+			}
+			else if(krok_where == "krok5")
+			{
+				bez();
+				play.style.display = "block";
+				stop.style.display = "none";
+			}
+		
+		
+		}
+		
+		
+		active(); //Prvotni auto spusteni animace. Pro jine spusteni nutno odstranit.
+		
+		
+		function bez() //Funkce bez vypina celou animaci, zastavi timery a vse zneviditileni. Funkce tlacitka "bez VE". 
+		{
+		
+			/*
+			
+				RESET FUNCTION
+			
+			*/
+		
+		
+			if (play != undefined && play != undefined)
+			{
+				play.style.display = "none";
+				stop.style.display = "block";
+			}
+
+			krok_where = "none";
+			// odstraneni animaci
+			sun_pulse.style.display = "block";
+			panel_img.classList.remove("animace_panel1");
+			panel_img.style.opacity = 0;
+			stridac.classList.remove("stridac_animace");
+			stridac2.classList.remove("stridac_animace2");
+			stridac.style.opacity = 0;
+			stridac2.style.opacity = 0;
+			energie1.style.opacity = 0;
+			energie2.style.opacity = 0;
+			energie3.style.opacity = 0;
+			energie4.style.opacity = 0;
+			energie5.style.opacity = 0;
+			energie6.style.opacity = 0;
+			energie6.classList.remove("fadeout");
+			
+			for (var i = 0; i < timeouts.length; i++) { //Vycisteni vsech timeru
+				clearTimeout(timeouts[i]);
+			}
+			
+			energie1.classList.remove("energie1_animace");
+			energie2.classList.remove("energie2_animace");
+			energie3.classList.remove("energie3_animace");
+			energie4.classList.remove("energie4_animace");
+			energie5.classList.remove("energie5_animace");
+			energie6.classList.remove("energie6_animace");
+			energie1.classList.remove("fadeout");
+			energie2.classList.remove("fadeout");
+			energie3.classList.remove("fadeout");
+			energie4.classList.remove("fadeout");
+			energie5.classList.remove("fadeout");
+			energie5.classList.remove("fadeout");
+			panel2_img.classList.remove("animace_panel2");
+			panel3_img.classList.remove("animace_panel3");
+			panel2_img.style.opacity = 0;
+			panel3_img.style.opacity = 0;
+			change.src = "images/do_domu_1.svg";
+			sun.style.display = "block";
+			sun.classList.remove("animace_sun");
+			shadow.style.opacity = 0;
+			shadow.classList.remove("shadow_animace");
+			windows.style.opacity = 0;
+			windows.classList.remove("windows_animace");
+			car.style.opacity = 0;
+			car.classList.remove("car_animace");
+			windows.classList.remove("fadeout");
+			_("windows").style.src = "images/okna_full";
+			windows_black.classList.remove("fadein");
+			windows.classList.remove("windows_animace_black");
+			windows_black.style.opacity = 0;
+			energie_auto.classList.remove("fadein");
+			energie_auto.style.opacity = 0;
+			light.classList.remove("fadeout");
+			light.style.opacity = 0;
+			light.classList.remove("fadein");
+			sun_pulse.classList.remove("fadeout");
+			sky.classList.remove("fadeout");
+			sky.style.opacity = 1;
+			dum.classList.remove("fadein");
+			dum.style.opacity = 0;
+			main_house_change.classList.remove("fadeout");
+			main_house_change.style.opacity = 1;
+			sun_pulse.classList.add("pulse");
+			car_day.classList.remove("fadeout");
+			car_day.style.display = "block";
+			
+			faze_text_mobil1.style.display = "block";
+			faze_text_mobil2.style.display = "none";
+			faze_text_mobil3.style.display = "none";
+			faze_text_mobil4.style.display = "none";
+			faze_text_mobil5.style.display = "none";
+			faze_text_mobil6.style.display = "none";
+			
+			
+			ikona1.style.display = "none";
+			ikona_text1.style.display = "none";
+			ikona_text2.style.display = "none";
+			ikona2.style.display = "none";
+			ikona_text3.style.display = "none";
+			ikona3.style.display = "none";
+			ikona_text4.style.display = "none";
+			ikona4.style.display = "none";
+			ikona_text5.style.display = "none";
+			ikona5.style.display = "none";
+			
+			ikona1.classList.remove("mobil_in");
+			ikona2.classList.remove("mobil_in");
+			ikona3.classList.remove("mobil_in");
+			ikona4.classList.remove("mobil_in");
+			ikona5.classList.remove("mobil_in");
+			
+			ikona1.classList.remove("mobil_out");
+			ikona2.classList.remove("mobil_out");
+			ikona3.classList.remove("mobil_out");
+			ikona4.classList.remove("mobil_out");
+			ikona5.classList.remove("mobil_out");
+			
+		}
+		
+		
+		
+		function active() //Funkce active spousti prvotni animaci. Lze kdykoliv zastavit pomoci bez()
+		{
+		
+			faze1.style.background = "rgb(4,16,28)";
+			 faze_text1.style.color = "white";
+			 faze2.style.background = "rgb(193,196,203)";
+			 faze_text2.style.color = "black";						
+			 faze3.style.background = "rgb(193,196,203)";
+			 faze_text3.style.color = "black";
+			  faze4.style.background = "rgb(193,196,203)";
+			 faze_text4.style.color = "black";
+			 faze5.style.background = "rgb(193,196,203)";
+			 faze_text5.style.color = "black";
+			  faze6.style.background = "rgb(193,196,203)";
+			 faze_text6.style.color = "black";
+		
+			// u takovychto veci by byl lepsi cyklus. Jelikoz bych ale musel tyto elementy nanest do pole a az pote cyklovat jeho indexy, je to pro 5 elementu pro me mene pracnejsi.
+
+			ikona1.classList.add("mobil_in");
+					
+			krok_where = "krok1";
+			//First animation step
+			timeouts[0] = setTimeout(function(){panel_img.classList.add("animace_panel1"); stridac.classList.add("stridac_animace"); ikona1.style.display = "block"; ikona_text1.style.display = "block";  }, 2400);
+			timeouts[1] = setTimeout(function(){ stridac.style.opacity = 1;  panel_img.style.opacity = 1; }, 3800);
+			timeouts[2] = setTimeout(function(){ energie1.classList.add("energie1_animace"); }, 4000);
+			timeouts[3] = setTimeout(function(){ energie1.style.opacity = 1; }, 5400);
+			timeouts[4] = setTimeout(function(){ energie2.classList.add("energie2_animace"); }, 6000);
+			timeouts[5] = setTimeout(function(){ energie2.style.opacity = 1; }, 6400);
+			
+			//Second animation step
+			timeouts[6] = setTimeout(krok2, 6500);
+		}
+		
+		
+		
+		function krok2()
+		{
+			ikona1.classList.remove("mobil_in");
+			ikona1.classList.add("mobil_out");
+			ikona2.classList.add("mobil_in");
+			
+			
+			faze_text_mobil1.style.display = "none";
+			faze_text_mobil2.style.display = "block";
+			faze_text_mobil3.style.display = "none";
+			faze_text_mobil4.style.display = "none";
+			faze_text_mobil5.style.display = "none";
+			faze_text_mobil6.style.display = "none";
+			
+
+			krok_where = "krok2";
+			
+			//Second step
+			timeouts[7] = setTimeout(function(){ panel2_img.classList.add("animace_panel2"); }, 3000);
+			timeouts[8] = setTimeout(function(){ panel3_img.classList.add("animace_panel3"); ikona1.style.display = "none";
+			ikona2.style.display = "block";
+			ikona_text1.style.display = "none";
+			ikona_text2.style.display = "block";
+			
+			}, 1000);
+			timeouts[9] = setTimeout(function(){ panel2_img.style.opacity = 1;  faze3.style.background = "rgb(4,16,28)"; faze_text3.style.color = "white";}, 4400);
+			timeouts[10] = setTimeout(function(){ panel3_img.style.opacity = 1; faze2.style.background = "rgb(4,16,28)"; faze_text2.style.color = "white";  }, 2400);
+			timeouts[11] = setTimeout(function(){ energie3.classList.add("energie3_animace");  }, 2000);
+			timeouts[12] = setTimeout(function(){ energie4.classList.add("energie4_animace");
+
+			faze_text_mobil1.style.display = "none";
+			faze_text_mobil2.style.display = "none";
+			faze_text_mobil3.style.display = "block";
+			faze_text_mobil4.style.display = "none";
+			faze_text_mobil5.style.display = "none";
+			faze_text_mobil6.style.display = "none";
+
+			}, 3800);
+			
+			timeouts[12] = setTimeout(function(){ energie3.style.opacity = 1; ikona2.classList.add("mobil_out"); }, 3400);
+			timeouts[13] = setTimeout(function(){ energie4.style.opacity = 1; change.src = "images/do_domu_2.svg"; 			ikona2.classList.remove("mobil_out");
+			ikona2.classList.add("mobil_in"); }, 5200);
+			
+			//Third animation step
+			timeouts[14] = setTimeout(krok3, 8000);
+		}
+		
+		function krok3()
+		{
+		
+			ikona2.classList.remove("mobil_in");
+			ikona2.classList.add("mobil_out");
+			ikona3.classList.add("mobil_in");
+			
+			
+			faze_text_mobil1.style.display = "none";
+			faze_text_mobil2.style.display = "none";
+			faze_text_mobil3.style.display = "none";
+			faze_text_mobil4.style.display = "block";
+			faze_text_mobil5.style.display = "none";
+			faze_text_mobil6.style.display = "none";
+			
+			
+			krok_where = "krok3";
+			//Third step
+			change.src = "images/do_domu_1.svg";
+			stridac2.classList.add("stridac_animace2");
+			timeouts[15] = setTimeout(function(){ stridac2.style.opacity = 1;  faze4.style.background = "rgb(4,16,28)"; faze_text4.style.color = "white";  energie5.style.opacity = 1; ikona2.style.display = "none";
+			ikona3.style.display = "block";
+			ikona_text2.style.display = "none";
+			ikona_text3.style.display = "block"; }, 1400);
+			 energie5.classList.add("energie5_animace");
+			 
+			 //Fourth animation step
+			timeouts[16] = setTimeout(krok4, 5000);
+		}
+		
+		function krok4()
+		{
+		
+			ikona3.classList.remove("mobil_in");
+			ikona3.classList.add("mobil_out");
+			ikona4.classList.add("mobil_in");
+		
+			faze_text_mobil1.style.display = "none";
+			faze_text_mobil2.style.display = "none";
+			faze_text_mobil3.style.display = "none";
+			faze_text_mobil4.style.display = "none";
+			faze_text_mobil5.style.display = "block";
+			faze_text_mobil6.style.display = "none";
+			
+			
+			timeouts[26] = setTimeout(function(){ ikona3.style.display = "none";
+			ikona4.style.display = "block";
+			ikona_text3.style.display = "none";
+			ikona_text4.style.display = "block";}, 1400);
+		
+			main_house_change.classList.add("fadeout")
+			dum.classList.add("fadein");
+			krok_where = "krok4";
+			//fourth step
+			energie1.classList.add("fadeout");
+			energie2.classList.add("fadeout");
+			energie3.classList.add("fadeout");
+			energie4.classList.add("fadeout");
+			energie5.classList.add("fadeout");
+			car_day.classList.add("fadeout");
+			sky.classList.add("fadeout");
+			energie1.style.opacity = 0;
+			energie2.style.opacity = 0;
+			energie3.style.opacity = 0;
+			energie4.style.opacity = 0;
+			energie5.style.opacity = 0;
+			sky.style.opacity = 0;
+			timeouts[17] = setTimeout(function(){ energie6.classList.add("energie6_animace");}, 2400);
+			timeouts[18] = setTimeout(function(){ energie6.style.opacity = 1;  faze5.style.background = "rgb(4,16,28)"; faze_text5.style.color = "white"; }, 3800);
+			sun.classList.add("animace_sun");
+			sun_pulse.classList.remove("pulse");
+			sun_pulse.classList.add("fadeout");
+			
+			
+			timeouts[19] = setTimeout(function(){
+				sun.style.display = "none";
+				car_day.style.display = "none"; 
+				sun_pulse.style.display = "none";
+				shadow.style.opacity = 1;  
+				dum.style.opacity = 1;
+				main_house_change.style.opacity = 0;
+				 car.style.opacity = 1;
+			
+			
+			}, 1400);
+			
+			
+			shadow.classList.add("shadow_animace");
+			timeouts[20] = timer13 = setTimeout(function(){ windows.classList.add("windows_animace"); light.classList.add("fadein");}, 3000);
+			timeouts[21] = setTimeout(function(){ windows.style.opacity = 1; light.style.opacity = 1; }, 4400);
+			car.classList.add("car_animace");
+			timeouts[22] = setTimeout(krok5, 8000);
+		}
+		
+		function krok5()
+		{
+		
+			ikona4.classList.remove("mobil_in");
+			ikona4.classList.add("mobil_out");
+			ikona5.classList.add("mobil_in");
+		
+			faze_text_mobil1.style.display = "none";
+			faze_text_mobil2.style.display = "none";
+			faze_text_mobil3.style.display = "none";
+			faze_text_mobil4.style.display = "none";
+			faze_text_mobil5.style.display = "none";
+			faze_text_mobil6.style.display = "block";
+		
+			krok_where = "krok5";
+		
+			windows.classList.add("fadeout");
+			windows_black.classList.add("fadein");
+			energie6.classList.add("fadeout");
+			energie_auto.classList.add("fadein");
+			
+			
+			timeouts[23] = setTimeout(function(){
+				energie_auto.style.opacity = 1; 
+				faze6.style.background = "rgb(4,16,28)";
+				faze_text6.style.color = "white"; 
+				windows.style.opacity = 0;
+				windows_black.style.opacity = 1;
+				energie6.style.opacity = 0;
+				light.style.opacity = 0;
+							ikona4.style.display = "none";
+			ikona5.style.display = "block";
+			ikona_text4.style.display = "none";
+			ikona_text5.style.display = "block";
+		
+			},  1400);
+			
+			
+			light.classList.remove("fadein");
+			light.classList.add("fadeout");
+			
+			timeouts[25] = setTimeout(function(){ bez(); active();  ikona1.style.display = "block";
+			ikona_text1.style.display = "block"; }, 5000); //Vraceni se zpet na prvni krok.
+		}
+		
+		
+		// Funkce buttonu na posun kroku. Funkce bez() se provadi pro stop vsech timeru.
+		
+		
+		function posun1() {
+			
+						
+			bez();
+			faze1.style.background = "rgb(4,16,28)";
+			 faze_text1.style.color = "white";
+			 faze2.style.background = "rgb(193,196,203)";
+			 faze_text2.style.color = "black";						
+			 faze3.style.background = "rgb(193,196,203)";
+			 faze_text3.style.color = "black";
+			  faze4.style.background = "rgb(193,196,203)";
+			 faze_text4.style.color = "black";
+			 faze5.style.background = "rgb(193,196,203)";
+			 faze_text5.style.color = "black";
+			  faze6.style.background = "rgb(193,196,203)";
+			 faze_text6.style.color = "black";
+			
+					
+			//Second animation step
+		 timeouts[24] = setTimeout(active(), 500);
+		}
+		function posun2() {
+		
+			bez();
+			faze1.style.background = "rgb(4,16,28)";
+			 faze_text1.style.color = "white";
+			 faze2.style.background = "rgb(4,16,28)";
+			 faze_text2.style.color = "white";						
+			 faze3.style.background = "rgb(193,196,203)";
+			 faze_text3.style.color = "black";
+			  faze4.style.background = "rgb(193,196,203)";
+			 faze_text4.style.color = "black";
+			 faze5.style.background = "rgb(193,196,203)";
+			 faze_text5.style.color = "black";
+			  faze6.style.background = "rgb(193,196,203)";
+			 faze_text6.style.color = "black";
+		
+		
+			panel_img.style.opacity = 1;
+			stridac.style.opacity = 1;
+			energie1.style.opacity = 1;
+			energie2.style.opacity = 1;
+							
+			timeouts[24] = setTimeout(krok2, 500);
+		}
+		function posun3() {	
+			bez();
+			
+			faze1.style.background = "rgb(4,16,28)";
+			 faze_text1.style.color = "white";
+			 faze2.style.background = "rgb(4,16,28)";
+			 faze_text2.style.color = "white";						
+			 faze3.style.background = "rgb(4,16,28)";
+			 faze_text3.style.color = "white";
+			  faze4.style.background = "rgb(193,196,203)";
+			 faze_text4.style.color = "black";
+			 faze5.style.background = "rgb(193,196,203)";
+			 faze_text5.style.color = "black";
+			  faze6.style.background = "rgb(193,196,203)";
+			 faze_text6.style.color = "black";
+			
+			krok_where = "krok2";
+			panel_img.style.opacity = 1;
+			stridac.style.opacity = 1;
+			energie1.style.opacity = 1;
+			energie2.style.opacity = 1;
+			energie3.style.opacity = 1;
+			panel3_img.style.opacity = 1;
+			timeouts[7] = setTimeout(function(){ panel2_img.classList.add("animace_panel2"); }, 1000);
+			timeouts[9] = setTimeout(function(){ panel2_img.style.opacity = 1;}, 2400);
+			timeouts[12]= setTimeout(function(){ energie4.classList.add("energie4_animace"); }, 3800);
+			timeouts[13] = setTimeout(function(){ energie4.style.opacity = 1; change.src = "images/do_domu_2.svg"; }, 5200);
+			
+			timeouts[24] = setTimeout(krok3, 8500);
+
+		}
+		function posun4() {
+		
+			bez();
+			faze1.style.background = "rgb(4,16,28)";
+			 faze_text1.style.color = "white";
+			 faze2.style.background = "rgb(4,16,28)";
+			 faze_text2.style.color = "white";						
+			 faze3.style.background = "rgb(4,16,28)";
+			 faze_text3.style.color = "white";
+			  faze4.style.background = "rgb(4,16,28)";
+			 faze_text4.style.color = "white";
+			 faze5.style.background = "rgb(193,196,203)";
+			 faze_text5.style.color = "black";
+			  faze6.style.background = "rgb(193,196,203)";
+			 faze_text6.style.color = "black";
+		
+		
+		krok_where = "krok3";
+		panel_img.style.opacity = 1;
+			stridac.style.opacity = 1;
+			energie1.style.opacity = 1;
+			energie2.style.opacity = 1;
+			energie3.style.opacity = 1;
+			panel3_img.style.opacity = 1;
+			energie4.style.opacity = 1;
+			panel2_img.style.opacity = 1;
+			
+			 
+			
+			timeouts[24] = setTimeout(krok3, 500);
+		
+
+		}
+		function posun5() {
+		//beware
+			bez();
+			faze1.style.background = "rgb(4,16,28)";
+			 faze_text1.style.color = "white";
+			 faze2.style.background = "rgb(4,16,28)";
+			 faze_text2.style.color = "white";						
+			 faze3.style.background = "rgb(4,16,28)";
+			 faze_text3.style.color = "white";
+			  faze4.style.background = "rgb(4,16,28)";
+			 faze_text4.style.color = "white";
+			 faze5.style.background = "rgb(4,16,28)";
+			 faze_text5.style.color = "white";
+			  faze6.style.background = "rgb(193,196,203)";
+			 faze_text6.style.color = "black";
+			 
+			 krok_where = "krok4";
+			panel_img.style.opacity = 1;
+			stridac.style.opacity = 1;
+			energie1.style.opacity = 1;
+			energie2.style.opacity = 1;
+			energie3.style.opacity = 1;
+			panel3_img.style.opacity = 1;
+			 stridac2.style.opacity = 1;
+			energie4.style.opacity = 1;
+			panel2_img.style.opacity = 1;
+			energie5.style.opacity = 1; 
+			timeouts[24] = setTimeout(krok4, 1000);
+		
+		}
+		function posun6() {
+			bez();
+			faze1.style.background = "rgb(4,16,28)";
+			 faze_text1.style.color = "white";
+			 faze2.style.background = "rgb(4,16,28)";
+			 faze_text2.style.color = "white";						
+			 faze3.style.background = "rgb(4,16,28)";
+			 faze_text3.style.color = "white";
+			  faze4.style.background = "rgb(4,16,28)";
+			 faze_text4.style.color = "white";
+			 faze5.style.background = "rgb(4,16,28)";
+			 faze_text5.style.color = "white";
+			  faze6.style.background = "rgb(4,16,28)";
+			 faze_text6.style.color = "white";
+			 			 
+			 dum.style.opacity = 1;
+			 
+			energie1.style.opacity = 0;
+			energie2.style.opacity = 0;
+			energie3.style.opacity = 0;
+			energie4.style.opacity = 0;
+			energie5.style.opacity = 0;
+			sky.style.opacity = 0;
+			 main_house_change.style.opacity = 0;
+			energie6.style.opacity = 1;
+			sun_pulse.classList.remove("pulse");			
+			 sun.style.display = "none";
+			 car_day.style.display = "none";
+			 sun_pulse.style.display = "none";
+			
+			 shadow.style.opacity = 1;
+			stridac.style.opacity = 1;
+			 stridac2.style.opacity = 1;
+			 windows.style.opacity = 1;
+			car.style.opacity = 1;
+			
+			 light.style.opacity = 1;
+			 
+			 
+			timeouts[24] = setTimeout(krok5, 1000);
+			 
+			 
+		
+		}
+		
+			
+	</script>
+</body>
+</html>
+
+

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:se="http://svg-edit.googlecode.com" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1880" height="542" style="">
+                                    <title>my vector image</title>
+									
+										<style type="text/css" media="screen">  
+										.object {
+										
+											animation: dash 15s linear;
+											 animation-iteration-count: infinite;
+											opacity: 1;
+											transition: 0.3s;
+											stroke-dasharray: 20;
+										}
+
+										@keyframes dash {
+										  100% {
+											stroke-dashoffset: 1500;
+										  }
+										}
+									</style>
+									
+                                    <!-- Created with Vector Paint - http://www.vectorpaint.yaks.com/ https://chrome.google.com/webstore/detail/hnbpdiengicdefcjecjbnjnoifekhgdo -->
+                                    <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none" class="" style=""/>
+                                <g style="" class="currentLayer"><title>Layer 1</title><path fill="none" fill-opacity="1" stroke="#11b3f0" stroke-opacity="1" stroke-width="4" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M510.54999649783895,540.0315267666153 L510.54999649783895,288.892456268507 " id="svg_1" class="object"/><path fill="none" fill-opacity="1" stroke="#11b3f0" stroke-opacity="1" stroke-width="4" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M508.9516247013517,286.09263105353216 L649.6005519396253,290.892631244267 " id="svg_3" class="object" transform="rotate(-1.4151067733764648 579.27606201172,288.49221801758074) "/><path fill="none" fill-opacity="1" stroke="#11b3f0" stroke-opacity="1" stroke-width="4" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" class="object" marker-end="" d="M650.4000091552734,287.18841434566656 L648.4000091552734,390.52175008850804 " id="svg_5"/></g></svg>

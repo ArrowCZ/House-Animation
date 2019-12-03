@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:se="http://svg-edit.googlecode.com" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1880" height="542" style="">
+                                    <title>my vector image</title>
+									
+										<style type="text/css" media="screen">  
+										.object {
+										
+											animation: dash 20s linear;
+											 animation-iteration-count: infinite;
+											opacity: 1;
+											transition: 0.3s;
+											stroke-dasharray: 20;
+										}
+
+										@keyframes dash {
+										  100% {
+											stroke-dashoffset: 1500;
+										  }
+										}
+									</style>
+									
+                                    <!-- Created with Vector Paint - http://www.vectorpaint.yaks.com/ https://chrome.google.com/webstore/detail/hnbpdiengicdefcjecjbnjnoifekhgdo -->
+                                    <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none" class="" style=""/>
+                                <g style="" class="currentLayer"><title>Layer 1</title><path fill="none" fill-opacity="1" stroke="#8cc63e" stroke-opacity="1" stroke-width="6" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M580.0325541884274,468.66300852671264 L645.104167137398,468.66300852671264 " class="object" transform="rotate(179.82669067382812 612.5685424804688,468.66299438476557) " id="svg_1"/></g></svg>
